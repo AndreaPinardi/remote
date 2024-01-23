@@ -1,10 +1,6 @@
-
-import 'tailwindcss/tailwind.css'
 import React, { useEffect, useMemo, useState } from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Step from "./step/index.js"
-
-
 
 const getConfig = async (fn) => {
   const steps = ["step1", "step2", "step3"]
