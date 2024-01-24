@@ -9,7 +9,7 @@ const getConfig = async (fn) => {
   })
 }
 
-export default function Home() {
+export default function Home({config = null, rxcBrain = null}) {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [steps, setSteps] = useState([]);
   
