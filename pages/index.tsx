@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import Step from "./step/index.js"
+import Step from "./step/index.tsx"
+import Button from './components/common/Button';
 
 const getConfig = async (fn) => {
   const steps = ["step1", "step2", "step3"]
@@ -28,8 +29,12 @@ export default function Home({config = null, rxcBrain = null}) {
   return (
     <Router>
       <div>
-        <button onClick={back}>Back</button>
-        <button onClick={next}>Next</button>
+        <nav className="flex justify-around p-5">
+          <Button onClick={back}>Back</Button>
+          <Button onClick={next} variant='secondary'>Next</Button>
+          <Button variant='inverted'>add insurance</Button>
+        </nav>
+       
         <Routes>
           <Route path="*" element={<Step currentStep={currentStep}/>}/>
         </Routes>

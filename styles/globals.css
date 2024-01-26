@@ -1,3 +1,118 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        /* fonts */
+        --font--primary: "Montserrat";
+        /* Color styles */
+        --base---primary: #0354A6;
+        --base---secondary: #D6D1EE;
+        --base---text--dark: #000000;
+        --base---text--light: #FFFFFF;
+        --base---white: #FFFFFF;
+        --base---gray--ultra-light: #F6F6F6;
+        --base---gray--light: #D8D8D8;
+        --base---gray--medium: #B0B0B0;
+        --base---gray--dark: #767676;
+        --base---black: #000000;
+        --base---other--color-1: #E0E9FA;
+        --base---other--color-2: #F7CAA8;
+        --base---other--color-3: #FFF1ED;
+        --base---other--color-4: #A0E2DA;
+        --base---other--color-5: #B5D2A6;
+        --base---other--color-6: #A295A4;
+        --functional---success: #247534;
+        --functional---error: #BB251A;
+        --functional---warning: #DC9F03;
+        --functional---info: #1465B4;
+        --alpha---black--light: #000000;
+        --alpha---black--dark: #000000;
+        --alpha---white--light: #FFFFFF;
+        --alpha---white--dark: #FFFFFF;
+        --light---primary: #F0F5FF;
+        --light---secondary: #F3F1FF;
+        --light---functional---error: #FDE1E1;
+        --light---functional---warning: #FCF9DB;
+        --light---functional---success: #D6F3E9;
+        --light---functional---info: #DCEDFC;
+        --dark---primary: #013365;
+        --dark---secondary: #8D80CE;
+        --dark---functional---error: #7B0000;
+        --dark---functional---warning: #B68405;
+        --dark---functional---success: #035630;
+        --dark---functional---info: #083867;
+        --c-r-m---gray: #909090;
+
+        /* Text-size styles */
+        /* base size: text-lg---regular----s-t (16px) */
+        --heading-1---desktop: 2.5rem;
+        --heading-1---mobile: 2rem;
+        --heading-2---desktop: 1.75rem;
+        --heading-2---mobile: 1.75rem;
+        --heading-3---desktop: 1rem;
+        --heading-3---mobile: 1rem;
+        --display---regular: 3.75rem;
+        --display---bold: 3.75rem;
+        --display---regular----link: 3.75rem;
+        --display---bold----link: 3.75rem;
+        --display---regular----s-t: 3.75rem;
+        --display---bold----s-t: 3.75rem;
+        --text-xxl---regular: 2.5rem;
+        --text-xxl---bold: 2.5rem;
+        --text-xxl---regular----link: 2.5rem;
+        --text-xxl---bold----link: 2.5rem;
+        --text-xxl---regular----s-t: 2.5rem;
+        --text-xxl---bold----s-t: 2.5rem;
+        --text-xl---regular: 1.25rem;
+        --text-xl---bold: 1.25rem;
+        --text-xl---regular----link: 1.25rem;
+        --text-xl---bold----link: 1.25rem;
+        --text-xl---regular----s-t: 1.25rem;
+        --text-xl---bold----s-t: 1.25rem;
+        --text-lg---regular: 1rem;
+        --text-lg---bold: 1rem;
+        --text-lg---regular----link: 1rem;
+        --text-lg---bold----link: 1rem;
+        --text-lg---regular----s-t: 1rem;
+        --text-lg---bold----s-t: 1rem;
+        --text-md---regular: 0.88rem;
+        --text-md---bold: 0.88rem;
+        --text-md---regular---link: 0.88rem;
+        --text-md---bold----link: 0.88rem;
+        --text-md---regular---s-t: 0.88rem;
+        --text-md---bold----s-t: 0.88rem;
+        --text-sm---regular: 0.75rem;
+        --text-sm---bold: 0.75rem;
+        --text-sm---regular----link: 0.75rem;
+        --text-sm---bold----link: 0.75rem;
+        --text-sm---regular----s-t: 0.75rem;
+        --text-sm---bold----s-t: 0.75rem;
+        --text-xs---regular: 0.69rem;
+        --text-xs---bold: 0.69rem;
+        --text-xs---regular----link: 0.69rem;
+        --text-xs---bold----link: 0.69rem;
+        --text-xs---regular----s-t: 0.69rem;
+        --text-xs---bold----s-t: 0.69rem;
+        --c-t-as---large: 1rem;
+        --c-t-as---medium: 0.88rem;
+        --c-t-as---small: 0.75rem;
+
+        /* Effect styles */
+        --elevation---light---01: inset 0px 1.4727271795272827px 11.781817436218262px rgba(96, 97, 112, 0.32);
+        --elevation---light--01:  0px 1.4727271795272827px 5.890908718109131px rgba(96, 97, 112, 0.16), 0px 0px 2.9454543590545654px rgba(40, 41, 61, 0.08);
+        --elevation---light--02:  0px 5.890908718109131px 11.781817436218262px rgba(96, 97, 112, 0.16), 0px 0px 2.9454543590545654px rgba(40, 41, 61, 0.04);
+        --elevation---light--03:  0px 11.781817436218262px 23.563634872436523px rgba(96, 97, 112, 0.16), 0px 0px 5.890908718109131px rgba(40, 41, 61, 0.04);
+        --elevation---light--04:  0px 23.563634872436523px 47.12726974487305px rgba(96, 97, 112, 0.16), 0px 5.890908718109131px 11.781817436218262px rgba(40, 41, 61, 0.04);
+        --elevation---light--05:  0px 47.12726974487305px 70.69090270996094px rgba(96, 97, 112, 0.16), 0px 5.890908718109131px 23.563634872436523px rgba(40, 41, 61, 0.04);
+        --elevation---light--06:  0px 58.90909194946289px 94.2545394897461px rgba(96, 97, 112, 0.24), 0px 5.890908718109131px 23.563634872436523px rgba(40, 41, 61, 0.08);
+        --elevation---dark---01: inset 0px 1.4727271795272827px 11.781817436218262px rgba(96, 97, 112, 0.32);
+        --elevation---dark--01:  0px 1.4727271795272827px 5.890908718109131px rgba(0, 0, 0, 0.16), 0px 0px 2.9454543590545654px rgba(0, 0, 0, 0.08);
+        --elevation---dark--02:  0px 5.890908718109131px 11.781817436218262px rgba(0, 0, 0, 0.16), 0px 0px 2.9454543590545654px rgba(0, 0, 0, 0.04);
+        --elevation---dark--03:  0px 11.781817436218262px 23.563634872436523px rgba(0, 0, 0, 0.16), 0px 0px 5.890908718109131px rgba(0, 0, 0, 0.04);
+        --elevation---dark--04:  0px 23.563634872436523px 47.12726974487305px rgba(0, 0, 0, 0.16), 0px 5.890908718109131px 11.781817436218262px rgba(0, 0, 0, 0.04);
+        --elevation---dark--05:  0px 47.12726974487305px 70.69090270996094px rgba(0, 0, 0, 0.16), 0px 5.890908718109131px 23.563634872436523px rgba(0, 0, 0, 0.04);
+        --elevation---dark--06:  0px 58.90909194946289px 94.2545394897461px rgba(0, 0, 0, 0.24), 0px 5.890908718109131px 23.563634872436523px rgba(0, 0, 0, 0.08);
+    }
+}
