@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import Step from "./step/index.tsx"
+import Step from "./step/index"
 import Button from './components/common/Button';
 
 const getConfig = async (fn) => {
